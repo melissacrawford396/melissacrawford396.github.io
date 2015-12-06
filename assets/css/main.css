@@ -2572,7 +2572,7 @@
 
 /* One */
 
-	#one:before {
+	/*#one:before {
 		background-image: url("../../images/banner.jpg");
 		background-position: top right;
 		background-repeat: no-repeat;
@@ -2581,7 +2581,7 @@
 		display: block;
 		height: 15em;
 		width: 100%;
-	}
+	}*/
 
 /* Footer */
 
@@ -2616,6 +2616,9 @@
 				#footer .copyright li a {
 					color: inherit;
 				}
+
+
+
 
 /* XLarge */
 
@@ -2653,115 +2656,10 @@
 				padding: 4em 0 2em 0;
 			}
 
-	}
-
-/* Large */
-
-	@media screen and (max-width: 1280px) {
-
-		/* Basic */
-
-			body, input, select, textarea {
-				font-size: 11pt;
-			}
-
-		/* Header */
-
-			#header {
-				width: 20em;
-			}
-
-		/* Wrapper */
-
-			#wrapper {
-				padding-right: 20em;
-			}
-
-	}
-
-/* Medium */
-
-	#titleBar {
-		display: none;
-	}
-
-	@media screen and (max-width: 1024px) {
-
-		/* Basic */
-
-			html, body {
-				overflow-x: hidden;
-			}
-
-			body, input, select, textarea {
-				font-size: 12pt;
-			}
-
-		/* Image */
-
-			.image.left, .image.right {
-				max-width: 40%;
-			}
-
-				.image.left img, .image.right img {
-					width: 100%;
-				}
-
-		/* Header */
-
-			#header {
-				-moz-backface-visibility: hidden;
-				-webkit-backface-visibility: hidden;
-				-ms-backface-visibility: hidden;
-				backface-visibility: hidden;
-				-moz-transition: -moz-transform 0.5s ease;
-				-webkit-transition: -webkit-transform 0.5s ease;
-				-ms-transition: -ms-transform 0.5s ease;
-				transition: transform 0.5s ease;
-				display: block;
-				height: 100%;
-				overflow-y: auto;
-				position: fixed;
-				top: 0;
-				width: 23em;
-				z-index: 10002;
-				-moz-transform: translateX(23em);
-				-webkit-transform: translateX(23em);
-				-ms-transform: translateX(23em);
-				transform: translateX(23em);
-				right: 0;
-			}
-
-				#header > footer {
-					bottom: auto;
-					left: auto;
-					margin: 1em 0 0 0;
-					position: relative;
-					right: auto;
-					top: auto;
-				}
-
-		/* Wrapper */
-
-			#wrapper {
-				-moz-backface-visibility: hidden;
-				-webkit-backface-visibility: hidden;
-				-ms-backface-visibility: hidden;
-				backface-visibility: hidden;
-				-moz-transition: -moz-transform 0.5s ease;
-				-webkit-transition: -webkit-transform 0.5s ease;
-				-ms-transition: -ms-transform 0.5s ease;
-				transition: transform 0.5s ease;
-				padding: 44px 0 1px 0;
-			}
-
-		/* One */
-
-			#one:before {
-				height: 10em;
-			}
-
 		/* Off-Canvas Navigation */
+			#titleBar > a{
+				display: none;
+			}
 
 			#titleBar {
 				-moz-backface-visibility: hidden;
@@ -2783,6 +2681,7 @@
 				color: #fff;
 				min-width: 320px;
 			}
+
 
 				#titleBar .title {
 					color: #fff;
@@ -2841,6 +2740,120 @@
 				-ms-transform: translateX(-23em);
 				transform: translateX(-23em);
 			}
+
+
+
+	}
+
+/* Large */
+
+	@media screen and (max-width: 1280px) {
+
+		/* Basic */
+
+			body, input, select, textarea {
+				font-size: 12pt;
+			}
+
+		/* Header */
+
+			#header {
+				width: 20em;
+			}
+
+		/* Wrapper */
+
+			#wrapper {
+				padding-right: 20em;
+			}
+
+
+	}
+
+
+/* Medium */
+
+
+	@media screen and (max-width: 1024px) {
+
+		/* Basic */
+			#titleBar > a{
+				display: block;
+			}
+
+			html, body {
+				overflow-x: hidden;
+			}
+
+			body, input, select, textarea {
+				font-size: 12pt;
+			}
+
+		/* Image */
+
+			.image.left, .image.right {
+				max-width: 40%;
+			}
+
+			.image.left img, .image.right img {
+				width: 100%;
+			}
+
+		/* Header */
+
+			#header {
+				-moz-backface-visibility: hidden;
+				-webkit-backface-visibility: hidden;
+				-ms-backface-visibility: hidden;
+				backface-visibility: hidden;
+				-moz-transition: -moz-transform 0.5s ease;
+				-webkit-transition: -webkit-transform 0.5s ease;
+				-ms-transition: -ms-transform 0.5s ease;
+				transition: transform 0.5s ease;
+				display: block;
+				height: 100%;
+				overflow-y: auto;
+				position: fixed;
+				top: 0;
+				width: 23em;
+				z-index: 10002;
+				-moz-transform: translateX(23em);
+				-webkit-transform: translateX(23em);
+				-ms-transform: translateX(23em);
+				transform: translateX(23em);
+				right: 0;
+			}
+
+			#header > footer {
+				bottom: auto;
+				left: auto;
+				margin: 1em 0 0 0;
+				position: relative;
+				right: auto;
+				top: auto;
+			}
+
+		/* Wrapper */
+
+			#wrapper {
+				-moz-backface-visibility: hidden;
+				-webkit-backface-visibility: hidden;
+				-ms-backface-visibility: hidden;
+				backface-visibility: hidden;
+				-moz-transition: -moz-transform 0.5s ease;
+				-webkit-transition: -webkit-transform 0.5s ease;
+				-ms-transition: -ms-transform 0.5s ease;
+				transition: transform 0.5s ease;
+				padding: 44px 0 1px 0;
+			}
+
+		/* One */
+
+			#one:before {
+				height: 10em;
+			}
+
+		/* Off-Canvas Navigation */
 
 			body.header-visible #header {
 				-moz-transform: translateX(0);
