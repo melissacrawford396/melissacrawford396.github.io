@@ -2457,6 +2457,7 @@
 		top: 0;
 		width: 23em;
 		right: 0;
+		z-index: 5;
 	}
 
 		#header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
@@ -2634,6 +2635,7 @@
 
 			#header {
 				width: 21em;
+				z-index: 10002;
 			}
 
 				#header > header {
