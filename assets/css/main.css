@@ -2634,7 +2634,7 @@
 
 		/* Format */
 
-		#format > li, h5{
+		h5{
 			padding-left:2em;
 			/*margin-left:5em;*/
 		}
