@@ -2208,7 +2208,8 @@
 	}
 
 		table tbody tr {
-			border: solid 2px #f4f4f4;
+			/*border: solid 2px #f4f4f4;*/
+			border: 0;
 			border-left: 0;
 			border-right: 0;
 		}
@@ -2630,6 +2631,14 @@
 			body, input, select, textarea {
 				font-size: 13pt;
 			}
+
+		/* Format */
+
+		#format > li, h5{
+			padding-left:2em;
+			/*margin-left:5em;*/
+		}
+
 
 		/* Header */
 
