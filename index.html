@@ -6,24 +6,61 @@
 -->
 <html>
 	<head>
-		
+		<title>Melissa Crawford</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<style>
+			@media screen and (max-width: 1024px) {
+				#header {
+					height: auto;
+					position: relative;
+					transform: none;
+					width: 100%;
+				}
+
+				#header > footer {
+					position: relative;
+				}
+
+				#wrapper {
+					padding: 0;
+				}
+
+				#titleBar {
+					display: none;
+				}
+			}
+		</style>
 	</head>
 	<body>
 
-
+		<!-- Header -->
+			<div id="header">
+				<header>
+					<h1>Melissa Crawford</h1>
+					<p>A landing page for apps and video games.</p>
+				</header>
+				<footer>
+					<a href="https://www.linkedin.com/in/melissa-crawford/">LinkedIn: melissa-crawford</a>
+				</footer>
+			</div>
 
 		<!-- Wrapper -->
 			<div id="wrapper">
-				<a href="http://melissacrawford.xyz/images/catInBox.jpg" class="image">
-					<img src="images/catInBox.jpg" alt="" height="600"/>Kitty!
-				</a>
-
+				<div id="main">
+					<section id="home">
+						<div class="container">
+							<p>This page will be filled in later with games and apps.</p>
+						</div>
+					</section>
+				</div>
 			</div>
+
+		<!-- Used by the template title bar -->
+			<span id="iconList" hidden>Melissa Crawford</span>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
