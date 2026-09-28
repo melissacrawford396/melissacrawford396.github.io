@@ -13,63 +13,55 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<style>
-			@media screen and (max-width: 1024px) {
-				#header {
-					height: auto;
-					position: relative;
-					transform: none;
-					width: 100%;
-				}
+			#wrapper {
+				padding: 0;
+			}
 
-				#header > footer {
-					position: relative;
-				}
+			#titleBar {
+				display: none;
+			}
 
-				#wrapper {
-					padding: 0;
-				}
+			.headline {
+				background: #1a3c34;
+				padding: 1.25em 0;
+			}
 
-				#titleBar {
-					display: none;
-				}
+			.headline h1 {
+				color: #ffffff;
+				font-size: 2em;
+				margin: 0;
+			}
+
+			#home,
+			#home p,
+			#home a {
+				color: #222222;
+			}
+
+			#home a:hover {
+				color: #1a3c34 !important;
 			}
 		</style>
 	</head>
 	<body>
 
-		<!-- Header -->
-			<div id="header">
-				<header>
-					<h1>Melissa Crawford</h1>
-					<p>A landing page for apps and video games.</p>
-				</header>
-				<footer>
-					<a href="https://www.linkedin.com/in/melissa-crawford/">LinkedIn: melissa-crawford</a>
-				</footer>
+		<header class="headline">
+			<div class="container">
+				<h1>Melissa Crawford</h1>
 			</div>
+		</header>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-				<div id="main">
-					<section id="home">
-						<div class="container">
-							<p>This page will be filled in later with games and apps.</p>
-						</div>
-					</section>
-				</div>
+		<div id="wrapper">
+			<div id="main">
+				<section id="home">
+					<div class="container">
+						<p>A landing page for apps and video games.</p>
+						<p><a href="https://www.linkedin.com/in/melissa-crawford/">LinkedIn: melissa-crawford</a></p>
+						<p>This page will be filled in later with games and apps.</p>
+					</div>
+				</section>
 			</div>
-
-		<!-- Used by the template title bar -->
-			<span id="iconList" hidden>Melissa Crawford</span>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollzer.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+		</div>
 
 	</body>
 </html>
